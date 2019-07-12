@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.7.9)  11 JUL 2019 08:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.7.9)  12 JUL 2019 10:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -981,7 +981,11 @@ Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
 \fb@frh=\dimen262
 \FrameRule=\dimen263
 \FrameSep=\dimen264
-) (./thesis.aux)
+) (./thesis.aux
+
+LaTeX Warning: Label `tab:maxdelays' multiply defined.
+
+)
 \openout1 = `thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 179.
@@ -1370,22 +1374,22 @@ Overfull \hbox (51.13383pt too wide) in paragraph at lines 321--322
 File: thesis_files/figure-latex/march3plot-1.pdf Graphic file (type pdf)
 <use thesis_files/figure-latex/march3plot-1.pdf>
 Package pdftex.def Info: thesis_files/figure-latex/march3plot-1.pdf  used on in
-put line 453.
+put line 466.
 (pdftex.def)             Requested size: 433.61894pt x 216.80946pt.
 
-Overfull \hbox (14.99892pt too wide) in paragraph at lines 453--454
+Overfull \hbox (14.99892pt too wide) in paragraph at lines 466--467
 [][] 
  []
 
 
-Overfull \hbox (33.16939pt too wide) in paragraph at lines 459--461
+Overfull \hbox (33.16939pt too wide) in paragraph at lines 472--474
 []\OT1/lmr/m/it/10 Markdown \OT1/lmr/m/n/10 Cheat-sheet - [][]$\OT1/lmtt/m/n/10
  https : / / github . com / adam-[]p / markdown-[]here / wiki / Markdown-[]Chea
 tsheet$[][] 
  []
 
 
-Overfull \hbox (45.24002pt too wide) in paragraph at lines 463--465
+Overfull \hbox (45.24002pt too wide) in paragraph at lines 476--478
 []\OT1/lmr/m/n/10 Introduction to \OT1/lmtt/m/n/10 dplyr \OT1/lmr/m/n/10 - [][]
 $\OT1/lmtt/m/n/10 https : / / cran . rstudio . com / web / packages / dplyr / v
 ignettes / introduction .
@@ -1395,7 +1399,7 @@ ignettes / introduction .
 Chapter 1. Mathematics and Science
 
 Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 507.
+less on input line 520.
 
 [12
 
@@ -1403,14 +1407,14 @@ less on input line 507.
 Chapter 2. Tables, Graphics, References, and Labels
 
 Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 595.
+less on input line 608.
 
 [14
 
 ]
 File: figure/drexel-logo.pdf Graphic file (type pdf)
 <use figure/drexel-logo.pdf>
-Package pdftex.def Info: figure/drexel-logo.pdf  used on input line 610.
+Package pdftex.def Info: figure/drexel-logo.pdf  used on input line 623.
 (pdftex.def)             Requested size: 327.2217pt x 338.26291pt.
 [15
 
@@ -1419,7 +1423,7 @@ Package pdftex.def Info: figure/drexel-logo.pdf  used on input line 610.
 File: thesis_files/figure-latex/delaysboxplot-1.pdf Graphic file (type pdf)
 <use thesis_files/figure-latex/delaysboxplot-1.pdf>
 Package pdftex.def Info: thesis_files/figure-latex/delaysboxplot-1.pdf  used on
- input line 628.
+ input line 641.
 (pdftex.def)             Requested size: 433.61894pt x 325.2142pt.
 [17
 
@@ -1427,23 +1431,23 @@ Package pdftex.def Info: thesis_files/figure-latex/delaysboxplot-1.pdf  used on
 <figure/subdivision.pdf, id=447, 220.825pt x 89.33376pt>
 File: figure/subdivision.pdf Graphic file (type pdf)
 <use figure/subdivision.pdf>
-Package pdftex.def Info: figure/subdivision.pdf  used on input line 639.
+Package pdftex.def Info: figure/subdivision.pdf  used on input line 652.
 (pdftex.def)             Requested size: 165.61833pt x 67.00014pt.
 File: figure/subdivision.pdf Graphic file (type pdf)
 <use figure/subdivision.pdf>
-Package pdftex.def Info: figure/subdivision.pdf  used on input line 647.
+Package pdftex.def Info: figure/subdivision.pdf  used on input line 660.
 (pdftex.def)             Requested size: 220.82445pt x 89.33353pt.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 654.
+(Font)              <8> on input line 667.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 654.
+(Font)              <6> on input line 667.
 [19
 
  <./figure/subdivision.pdf>] [20] [21]
 Chapter Conclusion
 
 Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 696.
+less on input line 709.
 
 [22
 
@@ -1451,7 +1455,7 @@ less on input line 696.
 Chapter References
 
 Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 729.
+less on input line 742.
 
 [23
 
@@ -1460,7 +1464,7 @@ less on input line 729.
 Appendix . The First Appendix
 
 Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 768.
+less on input line 781.
 
 [24
 
@@ -1468,7 +1472,7 @@ less on input line 768.
 Appendix . The Second Appendix, for Fun
 
 Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 771.
+less on input line 784.
 
 [26
 
@@ -1476,7 +1480,7 @@ less on input line 771.
 Appendix Vita
 
 Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 778.
+less on input line 791.
 
 [27
 
@@ -1484,27 +1488,30 @@ less on input line 778.
 ] [28
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 778.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 778.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 791.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 791.
 (./thesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 778.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 778.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 791.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 791.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
 (rerunfilecheck)             Checksum: 597667BD6A11380E6485CF401408CF37;2441.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 778.
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 791.
  )
 (\end occurred when \iffalse on line 1083 was incomplete) 
 Here is how much of TeX's memory you used:
  20742 strings out of 494553
  386446 string characters out of 6175436
- 484500 words of memory out of 5000000
+ 484540 words of memory out of 5000000
  23843 multiletter control sequences out of 15000+600000
  45408 words of font info for 54 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 62i,18n,94p,826b,687s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,18n,94p,826b,699s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/Users/Tyler.Bradle
 y/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/Users/Tyl
 er.Bradley/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}
@@ -1534,7 +1541,7 @@ ic/lm/lmtk10.pfb><c:/Users/Tyler.Bradley/AppData/Roaming/TinyTeX/texmf-dist/fon
 ts/type1/public/lm/lmtt10.pfb><c:/Users/Tyler.Bradley/AppData/Roaming/TinyTeX/t
 exmf-dist/fonts/type1/public/lm/lmtti10.pfb><c:/Users/Tyler.Bradley/AppData/Roa
 ming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on thesis.pdf (39 pages, 534156 bytes).
+Output written on thesis.pdf (39 pages, 534828 bytes).
 PDF statistics:
  647 PDF objects out of 1000 (max. 8388607)
  555 compressed objects within 6 object streams

@@ -367,7 +367,7 @@ We begin by checking to ensure that needed packages are installed and then we lo
 \begin{Shaded}
 \begin{Highlighting}[]
 \CommentTok{# List of packages required for this analysis}
-\NormalTok{pkg <-}\StringTok{ }\KeywordTok{c}\NormalTok{(}\StringTok{"dplyr"}\NormalTok{, }\StringTok{"ggplot2"}\NormalTok{, }\StringTok{"knitr"}\NormalTok{, }\StringTok{"bookdown"}\NormalTok{, }\StringTok{"devtools"}\NormalTok{)}
+\NormalTok{pkg <-}\StringTok{ }\KeywordTok{c}\NormalTok{(}\StringTok{"dplyr"}\NormalTok{, }\StringTok{"ggplot2"}\NormalTok{, }\StringTok{"knitr"}\NormalTok{, }\StringTok{"bookdown"}\NormalTok{, }\StringTok{"devtools"}\NormalTok{, }\StringTok{"kableExtra"}\NormalTok{)}
 \CommentTok{# Check if packages are not installed and assign the}
 \CommentTok{# names of the packages not installed to the variable new.pkg}
 \NormalTok{new.pkg <-}\StringTok{ }\NormalTok{pkg[}\OperatorTok{!}\NormalTok{(pkg }\OperatorTok{%in%}\StringTok{ }\KeywordTok{installed.packages}\NormalTok{())]}
@@ -377,8 +377,12 @@ We begin by checking to ensure that needed packages are installed and then we lo
   \KeywordTok{install.packages}\NormalTok{(new.pkg, }\DataTypeTok{repos =} \StringTok{"http://cran.rstudio.com"}\NormalTok{)}
 \CommentTok{# Load packages (daragondown will load all of the packages as well)}
 \KeywordTok{library}\NormalTok{(dragondown)}
+\KeywordTok{library}\NormalTok{(kableExtra)}
 \end{Highlighting}
 \end{Shaded}
+\begin{verbatim}
+Warning: package 'kableExtra' was built under R version 3.5.3
+\end{verbatim}
 \clearpage
 
 The example we show here does the following:
@@ -404,8 +408,8 @@ A useful function in the \texttt{knitr} package for making nice tables in \emph{
       \DataTypeTok{col.names =} \KeywordTok{c}\NormalTok{(}\StringTok{"Airline"}\NormalTok{, }\StringTok{"Max Arrival Delay"}\NormalTok{),}
       \DataTypeTok{caption =} \StringTok{"Maximum Delays by Airline"}\NormalTok{,}
       \DataTypeTok{caption.short =} \StringTok{"Max Delays by Airline"}\NormalTok{,}
-      \DataTypeTok{longtable =} \OtherTok{TRUE}\NormalTok{,}
-      \DataTypeTok{booktabs =} \OtherTok{TRUE}\NormalTok{)}
+      \DataTypeTok{longtable =} \OtherTok{TRUE}\NormalTok{, }\DataTypeTok{booktabs =} \OtherTok{TRUE}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{  }\KeywordTok{kable_styling}\NormalTok{(}\DataTypeTok{latex_options =} \KeywordTok{c}\NormalTok{(}\StringTok{"repeat_header"}\NormalTok{))}
 \end{Highlighting}
 \end{Shaded}
 \begin{longtable}{lr}
@@ -413,6 +417,16 @@ A useful function in the \texttt{knitr} package for making nice tables in \emph{
 \toprule
 Airline & Max Arrival Delay\\
 \midrule
+\endfirsthead
+\caption[]{\label{tab:maxdelays}Maximum Delays by Airline \textit{(continued)}}\\
+\toprule
+Airline & Max Arrival Delay\\
+\midrule
+\endhead
+\
+\endfoot
+\bottomrule
+\endlastfoot
 Alaska Airlines Inc. & 338\\
 American Airlines Inc. & 1539\\
 Delta Air Lines Inc. & 651\\
@@ -425,8 +439,7 @@ Southwest Airlines Co. & 694\\
 United Air Lines Inc. & 472\\
 US Airways Inc. & 347\\
 \addlinespace
-Virgin America & 366\\
-\bottomrule
+Virgin America & 366\\*
 \end{longtable}
 The last two options make the table a little easier-to-read.
 
